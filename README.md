@@ -39,6 +39,12 @@ This project is a simplified starter built from the tenancy pattern used in the 
 
 - `JWT_SECRET`: secret key used by the gateway to sign and validate JWTs
 
+## CI
+
+- GitHub Actions workflow: `.github/workflows/ci.yml`
+- Runs on push to `main`, pull requests to `main`, and manual dispatch
+- Executes `mvn clean verify` with Java 21
+
 ## Example
 
 ```http
